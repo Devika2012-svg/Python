@@ -1,0 +1,27 @@
+temperature = float(input("What is the current temperature in your area (°C)? "))
+raining = input("Is it raining? (yes/no): ").lower()
+windy = input("Is it windy? (yes/no): ").lower()
+
+print("\n--- Weather ---")
+
+if temperature >= 35:
+    print("🔥 It's extremely hot! Wear light clothing.")
+elif temperature >= 25:
+    print("☀️ It's warm. A jacket is not needed.")
+elif temperature >= 15:
+    print("😊 The weather is pleasant. Wear a light jacket.")
+elif temperature >= 5:
+    print("🧥 The weather is becoming cold! Wear a jacket.")
+else:
+    print("❄️ It's very cold!! Wear a heavy coat.")
+
+if raining == "yes":
+    print("☔ Don't forget your umbrella!")
+
+if windy == "yes":
+    print("💨 It is windy. Consider wearing a windproof jacket.")
+
+if temperature > 40:
+    print("⚠️ Extreme heat warning!! Avoid staying outside for long periods, wear sunscreen.")
+
+print("\nHope this helped!!!")
